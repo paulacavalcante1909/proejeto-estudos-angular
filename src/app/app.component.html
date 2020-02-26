@@ -1,0 +1,9 @@
+
+
+<app-nav-bar></app-nav-bar>
+<br>
+
+<app-login [usuario]="usuario" 
+(evento)="onEvento($event)" *ngIf="this.acesso == false || this.acesso == null"></app-login>
+<app-inicial [usuario]="usuario" *ngIf="this.acesso == true"></app-inicial>
+

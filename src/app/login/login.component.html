@@ -1,0 +1,22 @@
+<div class="row">
+
+      <div class="col s4 offset-s4 card center">
+        <div class="row">
+           <h4> Entrar</h4>
+            <div class="input-field col s12">
+              <input id="email" type="email" #email>
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" type="password" #senha>
+              <label for="password">Password</label>
+            </div>
+          </div>
+          <div class="row center">
+            <a class="black btn" (click)="login(email,senha)">Entrar</a>
+          </div>
+      </div>
+    
+    </div>
